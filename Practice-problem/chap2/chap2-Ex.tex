@@ -22,6 +22,39 @@
 \begin{document}
 \maketitle
 
+\subsubsection*{2-1}
+
+[1]ベルヌーイ分布は正規化されている。
+つまり下記が成立することを示せ。
+$$
+\sum_{n=0}^1 p(x| \mu ) = 1
+$$
+
+ベルヌーイ分布は
+$
+Ber(x| \mu) = \mu^x (1-\mu)^{1-x}
+$
+となる。
+
+$
+\sum_{n=0}^1 Ber(x| \mu)
+= Ber(0| \mu) + Ber(1| \mu)
+= \mu^0 (1-\mu)^{1-0} + \mu^1 (1-\mu)^{1-1}
+= 1 \times (1-\mu) + \mu \times 1 \\
+= 1-\mu + \mu
+= \underline{1}
+$
+\\
+
+上記より、
+$$
+\sum_{n=0}^1 Ber(x| \mu) = 1
+$$
+が成立するので、ベルヌーイ分布は正規化されている。
+
+
+
+
 
 
 \subsubsection*{2-26}
