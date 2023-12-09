@@ -50,13 +50,38 @@ $
 = \underline{1}
 $
 \\
-
 上記より、
 $$
 \sum_{n=0}^1 Ber(x| \mu) = 1
 $$
 が成立するので、ベルヌーイ分布は正規化されている。
+\\
 
+[2] $E[x] = \mu $であることを示す。\\
+$
+E[x] = 0 \times Ber(0| \mu) + 1 \times Ber(1| \mu)
+= 0 \times (1-\mu) + 1 \times \mu
+= \underline{\mu}
+$
+\\
+
+[3] $V[x] = \mu (1-\mu)$であることを示す。\\
+$$
+V[x] = E[x^2] - E[x]^2
+$$
+\\
+ここで、
+$
+E[x^2] = 0^2 \times Ber(0| \mu) + 1^2 \times Ber(1| \mu)
+= 0 \times (1-\mu) + 1 \times \mu
+= \underline{\mu}
+$
+
+よって、
+$
+V[x] = \mu - \mu^2
+= \underline{\mu (1-\mu)}
+$
 
 
 
