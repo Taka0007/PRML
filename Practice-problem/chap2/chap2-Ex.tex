@@ -30,7 +30,7 @@
 \section*{2-1}
 \addcontentsline{toc}{section}{2-1}
 [1]ベルヌーイ分布は正規化されている。
-つまり下記が成立することを示せ。
+つまり下記が成立することを示す。
 $$
 \sum_{n=0}^1 p(x| \mu ) = 1
 $$
@@ -82,8 +82,19 @@ $
 V[x] = \mu - \mu^2
 = \underline{\mu (1-\mu)}
 $
+\\
 
+[4] エントロピー$H[x]が-\mu \log_e \mu - (1-\mu) \log_e \mu (1-\mu)$であることを示す。\\
 
+エントロピーは下記のように定義される。(P.50)
+$$
+H[p] = - \sum_{i} p(x_i) \log_e p(x_i)
+$$
+
+$
+H[x] = - \sum_{i} Ber(x_i| \mu) \log_e Ber(x_i| \mu)
+= - \sum_{i} \mu^x_i (1-\mu)^{1-x_i} \log_e \mu^x_i (1-\mu)^{1-x_i}
+$\\
 
 \section*{2-12}
 \addcontentsline{toc}{section}{2-12}
