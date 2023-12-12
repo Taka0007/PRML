@@ -14,7 +14,17 @@
 % \usepackage{mdframed}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{framed}
 \setlength{\parindent}{0pt}
+
+\makeatletter
+\renewenvironment{leftbar}{%
+  \renewcommand\FrameCommand{\vrule width 1pt \hspace{10pt}}%
+  \MakeFramed {\advance\hsize-\width \FrameRestore}}%
+ {\endMakeFramed}
+\makeatother
+
+\newcommand{\barquo}[1]{\begin{leftbar} \noindent #1 \end{leftbar}} % 左線つき引用
 
 \definecolor{lightgray}{gray}{0.9}
 
@@ -110,6 +120,16 @@ $$
 
 \section*{2-26}
 \addcontentsline{toc}{section}{2-26}
+
+\barquo{
+下記の$Woodbury$行列反転公式を証明せよ。\\
+$$
+(A + BCD)^{-1} 
+=  A^{-1} -  A^{-1}B (C^{-1} + D A^{-1} B)^{-1} D A^{-1}
+$$
+}
+
+
 $A,B,C,D$は行列とする。\\
 $
 (A + BCD)^{-1} 
