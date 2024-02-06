@@ -1,4 +1,4 @@
 PRML.*
 !*.tex
-*.pdf
+!*.pdf
 *.gz
